@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Discrete Fourier Transform for sensor data to observe trends in the respiratory rate
+Discrete Fourier Transform for analyzing sensor data to observe temporal trends in the respiratory rate
 
 Created on Wed Apr 17 14:15:19 2019
 
