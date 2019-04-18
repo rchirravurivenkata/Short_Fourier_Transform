@@ -9,7 +9,7 @@ Fourier analysis converts a signal from its time domain to a representation in t
 
 ## Description
 
-To demonstrate inner workings of our code, we will use a sample file (****sample_sensor_data.txt****).
+To demonstrate the inner workings of our code, we will use a sample file (****sample_sensor_data.txt****).
 
 <p align="center">
   <img width="600" height="400" src="https://github.com/rcvenkata/Fast_Fourier_Transform/blob/master/Screenshot%20from%202019-04-17%2019-14-08.png">
