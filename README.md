@@ -48,7 +48,7 @@ $ git clone https://github.com/rcvenkata/Fast_Fourier_Transform.git
 
 #### 2. Change directory
 ```
-$ cd Fast_Fourier_Transform-master/
+$ cd Fast_Fourier_Transform/
 
 ```
 
