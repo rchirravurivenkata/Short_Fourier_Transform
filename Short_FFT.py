@@ -92,7 +92,7 @@ for i in range(len(slices2)):
 
 ## Plotting dominant frequencies across time
         
-fig = plt.figure(figsize=(20,15))
+fig = plt.figure(figsize=(10,7))
 ax=plt.subplot() 
 ax.set_ylim()
 ax.plot( times, maxFreqs)
