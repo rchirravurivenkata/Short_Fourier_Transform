@@ -1,4 +1,4 @@
-# Fast_Fourier_Transform
+# Short Fast_Fourier_Transform
 
 The script parses the sensor data files and subsequently performs FFT to observe the temporal trends in the respiratory rates.
 
