@@ -5,7 +5,7 @@ The script parses the sensor data and subsequently performs FFT to illustrate th
 
 ## Introduction
 
-Fourier analysis converts a signal from its time domain to a representation in the frequency domain and vice versa. Fast Fourier transforms are widely used for applications in engineering, science, and mathematics. The basic ideas were popularized in 1965, but some algorithms had been derived as early as 1805.
+Fourier analysis converts a signal from its time domain to a representation in the frequency domain and vice versa. Fast Fourier transforms are widely used for applications in engineering, science, and mathematics. The basic ideas were popularized in 1965, but some algorithms had been derived as early as 1805. 
 
 ## Description
 
@@ -24,14 +24,14 @@ In the above image, you could see that the entries within the variables are plac
 </p>
 
 
-Importantly, the sensor data needs to preprocessed due to the presence of noise within the data. First, lets use a sliding window approach where each window/batch comprises of 1500 samples (corresponds to approx 30 seconds). Now we move the window one sample at a time (i.e., we discard the first sample of the previous window to include a new sample for the current window). 
+Importantly, the sensor data is preprocessed to attenuate noise associated with the signals. A sliding window approach is used, where each window/batch comprises of 1500 samples (that corresponds to approx 30 seconds). The window is moved one sample at a time (i.e., the first sample of the previous window is discarded to include a new sample in the current window). 
 
 
 <p align="center">
   <img width="300" height="300" src="https://github.com/rcvenkata/Fast_Fourier_Transform/blob/master/proxy.duckduckgo.com.jpeg">
 </p>
 
-Each window of respiratory signals are rescaled using mean-centering. Therafter, Discrete Fourier Transform is applied on each window to identify dominant frequency. The obtained dominant frequencies across all windows are plotted against their corresponding times in seconds. The resultant plot is again saved (as ****Dominant_Frequency_across_time_plot.pdf****) in the working directory. The below plot represents the time in seconds vs frequencies (Hz) for our sample dataset. 
+Each window of respiratory signals are rescaled using mean-centering. Therafter, Discrete Fourier Transform is applied on each window to identify the dominant frequency. The dominant frequencies across all windows are plotted against their corresponding times (in seconds). The resultant plot is again saved (as ****Dominant_Frequency_across_time_plot.pdf****) in the working directory. The below plot represents the time in seconds vs frequencies (Hz) for our sample dataset. 
 
 <p align="center">
   <img width="500" height="500" src="https://github.com/rcvenkata/Fast_Fourier_Transform/blob/master/Dominant_frequency_across_time_plot.png">
