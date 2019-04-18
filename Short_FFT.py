@@ -35,6 +35,8 @@ a = pandas.read_csv(sys.stdin, sep=",")
 
 data = a[['timestamp', ' rresp']].dropna()
 
+sampling_freq= 50
+
 ## Convert timestamp variable to time in seconds
 
 data.iloc[:, 0] = data.iloc[:, 0]/1024   ### Divide by 1024 to convert to seconds
@@ -69,14 +71,10 @@ for i in range(len(slices2)):
 
     slices2[i] = slices2[i] - slices2[i].mean()
     
-## Convert time to hertz/frequency (within windows)
     
-  ## divide by 50 as 1 hertz is 50
+##  counts are linearly spaced frequency values
 
-
-counts = range(1, len(slices2[1])+1)
-counts= [x/50 for x in counts]
-
+counts = np.linspace(0, sampling_freq, windowSize)
 
 
 ## Loop to identify dominant frequencies across each window and save it along with its corresponding time
